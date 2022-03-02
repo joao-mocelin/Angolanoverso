@@ -8,6 +8,9 @@
     <link rel="icon" type="image/x-icon" href="angola_icon.png">
     <title>Depósito dos Angolanos😍</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
 
 <body class="bg">
@@ -182,6 +185,23 @@
             <img class="displayed" src="images/angolano-cinegrafista.jpg" alt="angolano-cinegrafista">
         </div>
     </div>
+    <a href="/addAngolano.html">Adicione seu angolano</a>
+    <div class="comments">
+        <div class="hiddena" id="gitalk-container"></div>
+    </div>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'c3cb10957c218e578c6b',
+            clientSecret: '7f129b266f92bc30b2e6634c18f3c03d7dad8f33',
+            repo: 'angolanos',      // The repository of store comments,
+            owner: 'joao-mocelin',
+            admin: ['joao-mocelin', 'IgorBayerl'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
 </body>
 
 </html>
