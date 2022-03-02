@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="angola_icon.png">
+    <title>Adiciona Angolano</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+</head>
+<body class="bg">
+    <div class="container">
+        aA
+    </div>
+    <div class="comments">
+        <div  id="gitalk-container"></div>
+    </div>
+    <script>
+        const gitalk = new Gitalk({
+            clientID: 'c3cb10957c218e578c6b',
+            clientSecret: '7f129b266f92bc30b2e6634c18f3c03d7dad8f33',
+            repo: 'angolanos',      // The repository of store comments,
+            owner: 'joao-mocelin',
+            admin: ['joao-mocelin', 'IgorBayerl'],
+            id: location.pathname,      // Ensure uniqueness and length less than 50
+            distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+
+        gitalk.render('gitalk-container')
+    </script>
+</body>
+</html>
