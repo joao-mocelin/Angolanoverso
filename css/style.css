@@ -43,3 +43,11 @@ img.displayed {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+iframe {
+	width: 300px;
+	height: 300px;
+	display: table;
+	margin: 30px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
