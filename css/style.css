@@ -51,3 +51,9 @@ iframe {
 	border-radius: 8px;
 	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
+.comments{
+	background-color: rgb(255,255,255);
+	margin: 30px;
+	border-radius: 8px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
