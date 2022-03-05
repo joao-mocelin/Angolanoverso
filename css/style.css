@@ -1,3 +1,7 @@
+html {
+	scrollbar-width: 10px;
+	scrollbar-color: blue;
+}
 .bg {
 	background: rgba(0, 0, 0, 0.5);
 }
