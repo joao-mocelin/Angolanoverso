@@ -246,7 +246,7 @@
                     const textName = comment.innerText.slice(pName + 6, pEmoji).trim()
                     const textEmoji = comment.innerText.slice(pEmoji + 7, pUrl).trim()
                     const textImg = comment.innerText.slice(pUrl + 5).trim()
-                    if (textName.lenght > 1 && textEmoji > 0 && textImg > 5) {
+                    if (textName.lenght > 1 && textEmoji.lenght > 0 && textImg.lenght > 5) {
                         addCard(textName, textEmoji, textImg)
                     }
                 }
