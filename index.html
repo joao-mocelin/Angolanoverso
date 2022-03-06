@@ -216,8 +216,8 @@
 
     <script>
         const gitalk = new Gitalk({
-            clientID: '9f08844343c7c3564335',
-            clientSecret: '9514571fb6a61b8521e9657fd182913fc120eea7',
+            clientID: '3b53c4b7f46b647d7639',
+            clientSecret: '5d82db75d245a6d8c3b63c142b09c0fd1621ba6c',
             repo: 'Angolanoverso',      // The repository of store comments,
             owner: 'joao-mocelin',
             admin: ['joao-mocelin', 'IgorBayerl'],
@@ -261,7 +261,7 @@
             
             const comment_gitalk = document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > textarea")
             comment_gitalk.value = comment
-            comment_gitalk.dispatchEvent(new KeyboardEvent('keydown', { 'key': '/' }));
+            comment_gitalk.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'a' }));
             setTimeout(function () {
                 document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > div.gt-header-controls > button.gt-btn.gt-btn-public > span").click()
             }, 500);
