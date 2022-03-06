@@ -4,3 +4,4 @@
 - [x] css bonito
 - [x] adição de novos angolanos via js
 - [ ] arrumar os comments
+- [ ] remover o css desnescessário
