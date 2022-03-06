@@ -47,25 +47,24 @@ img.displayed {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
-.container2{
+.container2 {
 	justify-content: center;
 	align-items: center;
 	display: flex;
 	flex-direction: column;
 }
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #000000;
+	background: #000000;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(234, 0, 255, 0.364);
-  border-radius: 8px;
+	background: rgba(234, 0, 255, 0.364);
+	border-radius: 8px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(170, 0, 255);
-  
+	background: rgb(170, 0, 255);
 }
 .hidden {
 	display: none;
@@ -75,4 +74,17 @@ img.displayed {
 	justify-content: center;
 	display: flex;
 	flex-direction: column;
+}
+.vrido {
+	background: rgba(255, 255, 255, 0.25) !important;
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+	backdrop-filter: blur(15px) !important;
+	-webkit-backdrop-filter: blur(15px) !important;
+	border-radius: 10px !important;
+	border: 1px solid rgba(255, 255, 255, 0.18) !important;
+	margin-top: 10px !important; 
+	
+}
+.w3-button {
+	
 }

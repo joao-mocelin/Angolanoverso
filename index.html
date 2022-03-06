@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="angola_icon.png">
     <title>AngolanoVerso😍</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
 </head>
@@ -185,12 +185,37 @@
             <h1 class="angola_txt">Angolano cinegrafista🎥🎬</h1>
             <img class="displayed" src="images/angolano-cinegrafista.jpg" alt="angolano-cinegrafista">
         </div>
+
+
+        <!-- Trigger/Open the Modal -->
+        <button onclick="document.getElementById('id01').style.display='flex'" class="w3-button">Adicionar
+            angolano</button>
+
+        <!-- The Modal -->
+        <div id="id01" class="w3-modal" style="display: none; justify-content: center;">
+            <div class="w3-modal-content vrido" style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
+                <div class="w3-container vrido">
+                    <span onclick="document.getElementById('id01').style.display='none'"
+                        class="w3-button w3-display-topright">&times;</span>
+                </div>
+                <div class="envio_angolano vrido">
+
+                    <input class="vrido" id="input_nome" type="text" placeholder="Nome_do_angolano" autofocus />
+                    <input class="vrido" id="input_emoji" type="text" placeholder="emoji" />
+                    <input class="vrido" id="input_url" type="text" placeholder="https://url_da_imagem.com" />
+                    <button class="vrido" onclick="comment_gen()">Enviar angolano</button>
+                    <textarea class="vrido" id="textarea" style="height: 150px;"></textarea>
+
+                </div>
+                <div class="comments" ; style="background-color: rgb(255,255,255);
+                	margin: 30px; border-radius: 8px; box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); padding: 10px;">
+                    <div class="" id="gitalk-container"></div>
+                </div>
+            </div>
+        </div>
     </div>
-    <a class="angola_txt" ; href="/Angolanoverso/addAngolano.html" style="width: fit-content; padding: 10px; text-decoration: none; color: black;">Adicione seu angolano</a>
-    <div class="comments hidden" ; style="background-color: rgb(255,255,255);
-	margin: 30px; border-radius: 8px; box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); padding: 10px;">
-        <div class="hidden" id="gitalk-container"></div>
-    </div>
+
+
     <script>
         const gitalk = new Gitalk({
             clientID: '9f08844343c7c3564335',
@@ -207,7 +232,7 @@
         function addCard(title, emoji, img) {
             const angolaBox = document.querySelector('.angola_box')
             const card = angolaBox.cloneNode(true)
-            card.querySelector('.angola_txt').innerHTML = ` ${ title } ${ emoji } `
+            card.querySelector('.angola_txt').innerHTML = ` ${title} ${emoji} `
             card.querySelector('img').src = img
             document.querySelector('.container').appendChild(card)
         }
@@ -228,8 +253,15 @@
 
         }
         setTimeout(function () {
-                searchInComments()
-            }, 5000);
+            searchInComments()
+        }, 5000);
+        function comment_gen() {
+            const nome = document.getElementById("input_nome").value
+            const emoji = document.getElementById("input_emoji").value
+            const url = document.getElementById("input_url").value
+            const comment = ` -nome:${nome}\n -emoji:${emoji}\n -url:${url}\n`
+            document.getElementById("textarea").value = comment
+        }
     </script>
 </body>
 
