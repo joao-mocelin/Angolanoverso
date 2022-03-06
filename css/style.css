@@ -47,6 +47,12 @@ img.displayed {
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
+.container2{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -60,4 +66,13 @@ img.displayed {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(170, 0, 255);
   
+}
+.hidden {
+	display: none;
+}
+.envio_angolano {
+	width: 50%;
+	justify-content: center;
+	display: flex;
+	flex-direction: column;
 }
