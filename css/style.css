@@ -1,6 +1,6 @@
 html {
-	scrollbar-width: 10px;
 	scrollbar-color: blue;
+	scrollbar-width: thin;
 }
 .bg {
 	background: rgba(0, 0, 0, 0.5);
@@ -46,4 +46,18 @@ img.displayed {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(234, 0, 255, 0.364);
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(170, 0, 255);
+  
 }

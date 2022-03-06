@@ -203,6 +203,31 @@
         })
 
         gitalk.render('gitalk-container')
+
+        function addCard(title, emoji, img) {
+            const angolaBox = document.querySelector('.angola_box')
+            const card = angolaBox.cloneNode(true)
+            card.querySelector('.angola_txt').innerHTML = ` ${ title } ${ emoji } `
+            card.querySelector('img').src = img
+            document.querySelector('.container').appendChild(card)
+        }
+        function searchInComments() {
+
+            document.querySelectorAll('.gt-comment').forEach(comment => {
+
+                const pName = comment.innerText.search('-nome:')
+                const pEmoji = comment.innerText.search('-emoji:')
+                const pUrl = comment.innerText.search('-url:')
+                if (pName != -1 || pEmoji != -1 || pUrl != -1) {
+                    const textName = comment.innerText.slice(pName + 6, pUrl).trim()
+                    const textEmoji = comment.innerText.slice(pEmoji + 7, pUrl).trim()
+                    const textImg = comment.innerText.slice(pUrl + 5).trim()
+                    addCard(textName, textEmoji, textImg)
+                }
+            })
+
+        }
+        searchInComments()
     </script>
 </body>
 
