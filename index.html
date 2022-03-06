@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="angola_icon.png">
     <title>AngolanoVerso😍</title>
-    <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
     <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
@@ -118,11 +118,11 @@
             <img class="displayed" src="images/angolano-executivo.jpg" alt="angolano-executivo">
         </div>
         <div class="angola_box">
-            <h1 class="angola_txt">Angolano inteligente👨🏿‍🎓</h1>
+            <h1 class="angola_txt">Angolano inteligente<br>👨🏿‍🎓</h1>
             <img class="displayed" src="images/ANGOLANO_INTELIGENTE.jpg" alt="angolano-inteligente">
         </div>
         <div class="angola_box">
-            <h1 class="angola_txt">Angolano acidentado👨🏿‍🦽🚲</h1>
+            <h1 class="angola_txt">Angolano acidentado<br>👨🏿‍🦽🚲</h1>
             <img class="displayed" src="images/angolano-acidentado.jpg" alt="angolano-acidentado">
         </div>
         <div class="angola_box">
@@ -146,11 +146,11 @@
             <img class="displayed" src="images/angolano-motoqueiro.jpg" alt="angolano-motoqueiro">
         </div>
         <div class="angola_box">
-            <h1 class="angola_txt">Angolano narguileiro🧯</h1>
+            <h1 class="angola_txt">Angolano narguileiro<br>🧯</h1>
             <img class="displayed" src="images/angolano-narguileiro.jpg" alt="angolano-narguileiro">
         </div>
         <div class="angola_box">
-            <h1 class="angola_txt">Angolano karate🥋👊🏿</h1>
+            <h1 class="angola_txt">Angolano karate<br>🥋👊🏿</h1>
             <img class="displayed" src="images/angolano-karate.jpeg" alt="angolano-karate">
         </div>
         <div class="angola_box">
@@ -158,7 +158,7 @@
             <img class="displayed" src="images/angolano-flexivel.jpg" alt="angolano-flexivel">
         </div>
         <div class="angola_box">
-            <h1 class="angola_txt">Angolano vegano🤢🤮</h1>
+            <h1 class="angola_txt">Angolano vegano<br>🤢🤮</h1>
             <img class="displayed" src="images/angolano-vegano.jpeg" alt="angolano-vegano">
         </div>
         <div class="angola_box">
@@ -185,36 +185,35 @@
             <h1 class="angola_txt">Angolano cinegrafista🎥🎬</h1>
             <img class="displayed" src="images/angolano-cinegrafista.jpg" alt="angolano-cinegrafista">
         </div>
-
-
-        <!-- Trigger/Open the Modal -->
-        <button onclick="document.getElementById('id01').style.display='flex'" class="w3-button">Adicionar
-            angolano</button>
-
-        <!-- The Modal -->
-        <div id="id01" class="w3-modal" style="display: none; justify-content: center;">
-            <div class="w3-modal-content vrido" style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
-                <div class="w3-container vrido">
-                    <span onclick="document.getElementById('id01').style.display='none'"
-                        class="w3-button w3-display-topright">&times;</span>
-                </div>
-                <div class="envio_angolano vrido">
-
-                    <input class="vrido" id="input_nome" type="text" placeholder="Nome_do_angolano" autofocus />
-                    <input class="vrido" id="input_emoji" type="text" placeholder="emoji" />
-                    <input class="vrido" id="input_url" type="text" placeholder="https://url_da_imagem.com" />
-                    <button class="vrido" onclick="comment_gen()">Enviar angolano</button>
-                    <textarea class="vrido" id="textarea" style="height: 150px;"></textarea>
-
-                </div>
-                <div class="comments" ; style="background-color: rgb(255,255,255);
-                	margin: 30px; border-radius: 8px; box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); padding: 10px;">
-                    <div class="" id="gitalk-container"></div>
-                </div>
+    </div>
+    <!-- Trigger/Open the Modal -->
+    <button onclick="document.getElementById('id01').style.display='flex'" class="w3-button vrido" style="display:block; flex-direction: column; position: fixed; left: 1; top: 0; margin-right: 30px; margin-top: 30px; background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Flag_of_Angola.svg/255px-Flag_of_Angola.svg.png) !important; background-size: contain !important;">Adicionar
+        angolano</button>
+    
+    <!-- Modal -->
+    <div id="id01" class="w3-modal" style="display: flexbox; justify-content: center;">
+        <div class="w3-modal-content vrido"
+            style="display: flex; flex-direction: column; justify-content: center; width: 50%;">
+            <div class="w3-container vrido">
+                <span onclick="document.getElementById('id01').style.display='none'"
+                    class="w3-button vrido w3-display-topright"
+                    style="display: block; position: fixed; right: -50%; top: 0;">&times;</span>
+            </div>
+            <div class="envio_angolano vrido">
+    
+                <input class="vrido" id="input_nome" type="text" placeholder="Nome_do_angolano" autofocus />
+                <input class="vrido" id="input_emoji" type="text" placeholder="emoji" />
+                <input class="vrido" id="input_url" type="text" placeholder="https://url_da_imagem.com" />
+                <button class="vrido" onclick="comment_gen()">Enviar angolano</button>
+                <textarea class="vrido" id="textarea" style="height: 150px;"></textarea>
+    
+            </div>
+            <div class="comments" ; style="background-color: rgb(255,255,255);
+                    	margin: 30px; border-radius: 8px; box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5); padding: 10px;">
+                <div class="" id="gitalk-container"></div>
             </div>
         </div>
     </div>
-
 
     <script>
         const gitalk = new Gitalk({
