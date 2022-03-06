@@ -261,7 +261,7 @@
             
             const comment_gitalk = document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > textarea")
             comment_gitalk.value = comment
-            comment_gitalk.dispatchEvent(new KeyboardEvent('keydown', { 'key': 'a' }));
+            comment_gitalk.dispatchEvent(new KeyboardEvent('keydown', { 'key': '/' }));
             setTimeout(function () {
                 document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > div.gt-header-controls > button.gt-btn.gt-btn-public > span").click()
             }, 500);
