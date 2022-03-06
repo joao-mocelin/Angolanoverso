@@ -105,6 +105,7 @@ img.displayed:hover {
 	transform: translate(-0%, -0%) !important;
 }
 .w3-button:hover {
+	color: white !important;
 	transform: scale(1.5) !important;
 	background: url("https://pbs.twimg.com/profile_images/1334214272478552071/J9QdMOLw_400x400.jpg") !important;
 	background-size: cover !important;
