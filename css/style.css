@@ -49,8 +49,8 @@ img.displayed {
 	transition: 0.3s;
 }
 img.displayed:hover {
-	transform: scale(1.5) rotate(360deg);
-
+	transform: scale(1.5);
+	cursor: pointer;
 }
 .container {
 	display: flex;
