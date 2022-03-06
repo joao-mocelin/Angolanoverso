@@ -2,6 +2,7 @@ html {
 	scrollbar-color: blue;
 	scrollbar-width: thin;
 	font-family: Georgia, 'Times New Roman', Times, serif !important;
+	font-weight: bold !important;
 }
 .bg {
 	background: rgba(0, 0, 0, 0.5);
@@ -16,20 +17,23 @@ html {
 .header_txt {
 	font-family: Georgia, "Times New Roman", Times, serif;
 	font-size: auto;
+	font-weight: bolder  !important;
 	text-align: center;
 	color: rgb(242, 4, 255);
 }
 .angola_txt {
 	font-family: Georgia, "Times New Roman", Times, serif !important;
 	font-size: 28px !important;
+	font-weight: bold !important;
 	width: 300px !important;
-	height: 80px !important;
+	height: auto !important;
 	display: table !important;
 	margin: 30px !important;
 	text-align: center !important;
 	background-color: whitesmoke !important;
 	border-radius: 8px !important;
 	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5) !important;
+	border: solid 2px;
 }
 .angola_box {
 	width: fit-content;
@@ -42,11 +46,17 @@ img.displayed {
 	margin: 30px;
 	border-radius: 8px;
 	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+	transition: 0.3s;
+}
+img.displayed:hover {
+	transform: scale(1.5) rotate(360deg);
+
 }
 .container {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	font-weight: bold !important;
 }
 .container2 {
 	justify-content: center;
@@ -71,6 +81,7 @@ img.displayed {
 	display: none;
 }
 .envio_angolano {
+	margin-left: 25%;
 	width: 50%;
 	justify-content: center;
 	display: flex;
