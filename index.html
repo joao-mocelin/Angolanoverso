@@ -260,6 +260,10 @@
             const url = document.getElementById("input_url").value
             const comment = ` -nome:${nome}\n -emoji:${emoji}\n -url:${url}\n`
             document.getElementById("textarea").value = comment
+
+
+            document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > textarea").value = comment
+            document.querySelector("#gitalk-container > div > div.gt-header > div.gt-header-comment > div.gt-header-controls > button.gt-btn.gt-btn-public > span").click()
         }
     </script>
 </body>

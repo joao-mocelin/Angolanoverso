@@ -50,7 +50,6 @@ img.displayed {
 }
 img.displayed:hover {
 	transform: scale(1.5);
-	cursor: pointer;
 }
 .container {
 	display: flex;
