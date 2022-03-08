@@ -1,8 +1,5 @@
 html {
-	scrollbar-color: blue;
-	scrollbar-width: thin;
-	font-family: Georgia, 'Times New Roman', Times, serif !important;
-	font-weight: bold !important;
+	font-weight: bold;
 }
 .bg {
 	background: rgba(0, 0, 0, 0.5);
@@ -16,23 +13,22 @@ html {
 }
 .header_txt {
 	font-family: Georgia, "Times New Roman", Times, serif;
-	font-size: auto;
-	font-weight: bolder  !important;
+	font-weight: bolder;
 	text-align: center;
 	color: rgb(242, 4, 255);
 }
 .angola_txt {
-	font-family: Georgia, "Times New Roman", Times, serif !important;
-	font-size: 28px !important;
-	font-weight: bold !important;
-	width: 300px !important;
-	height: auto !important;
-	display: table !important;
-	margin: 30px !important;
-	text-align: center !important;
-	background-color: whitesmoke !important;
-	border-radius: 8px !important;
-	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5) !important;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 28px;
+	font-weight: bold;
+	width: 300px;
+	height: auto;
+	display: table;
+	margin: 30px;
+	text-align: center;
+	background-color: whitesmoke;
+	border-radius: 8px;
+	box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 	border: solid 2px;
 }
 .angola_box {
@@ -55,7 +51,6 @@ img.displayed:hover {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	font-weight: bold !important;
 }
 .container2 {
 	justify-content: center;
@@ -87,12 +82,12 @@ img.displayed:hover {
 	flex-direction: column;
 }
 .vrido {
-	background: rgba(255, 255, 255, 0.25) !important;
-	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
-	backdrop-filter: blur(15px) !important;
-	-webkit-backdrop-filter: blur(15px) !important;
-	border-radius: 10px !important;
-	border: 1px solid rgba(255, 255, 255, 0.18) !important;
+	background: rgba(255, 255, 255, 0.25);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(15px);
+	-webkit-backdrop-filter: blur(15px);
+	border-radius: 10px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
 	margin-top: 10px !important;
 	justify-content: center;
 }
