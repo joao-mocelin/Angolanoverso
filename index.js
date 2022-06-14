@@ -59,5 +59,5 @@ function comment_gen() {
 				"#gitalk-container > div > div.gt-header > div.gt-header-comment > div.gt-header-controls > button.gt-btn.gt-btn-public > span"
 			)
 			.click();
-	}, 500);
+	}, 500); 
 }
